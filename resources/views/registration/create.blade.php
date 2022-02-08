@@ -69,6 +69,7 @@
                                     <label for="name" class="form-label">Class</label>
                                     <input type="text" class="form-control" id="class" name="class" placeholder="Enter Class">
                                 </div>
+                                <a href="{{ url()->previous() }}" class="btn btn-warning">Back</a>
                                 <button type="submit" class="btn btn-primary">Submit</button>
                                 <button type="reset" class="btn btn-danger">Reset</button>
                             </form>
