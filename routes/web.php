@@ -19,7 +19,7 @@ Route::get('/', function () {
 
 Route::get('/registration', function () {
     return view('registration.create');
-});
+})->name('registration');
 
 Auth::routes();
 
