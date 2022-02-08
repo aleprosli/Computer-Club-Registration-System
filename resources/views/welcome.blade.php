@@ -32,12 +32,12 @@
                         @if (Route::has('login'))
                             @auth
                             <li class="nav-item"><a href="{{ url('/home') }}" class="nav-link">Home</a>
+                            <li class="nav-item"><a href="{{ route('registration') }}" class="nav-link">Register</a>
+
                             @else
-                            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Log in</a>
-        
-                                @if (Route::has('register'))
-                                <li class="nav-item"><a href="{{ route('register') }}" class="nav-link">Register</a>
-                                @endif
+                            <li class="nav-item"><a href="{{ route('login') }}" class="nav-link">Admin</a>
+                            <li class="nav-item"><a href="{{ route('registration') }}" class="nav-link">Register</a>
+                                
                             @endauth
                     @endif
                     </ul>
