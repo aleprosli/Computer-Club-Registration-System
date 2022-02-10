@@ -39,11 +39,12 @@
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Identification Number</label>
-                                    <input type="text" class="form-control" id="ic" name="ic" placeholder="Enter Identification Number">
+                                    <input type="number" class="form-control" id="ic" name="ic" placeholder="Enter Identification Number">
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Password</label>
-                                    <input type="text" class="form-control" id="password" name="password" placeholder="Enter password">
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password">
+                                    <input type="checkbox" onclick="showpassword()">Show Password
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Address</label>
@@ -51,11 +52,11 @@
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Age</label>
-                                    <input type="text" class="form-control" id="age" name="age" placeholder="Enter Age">
+                                    <input type="number" class="form-control" id="age" name="age" placeholder="Enter Age">
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Phone Number</label>
-                                    <input type="text" class="form-control" id="phone_number" name="phone_number" placeholder="Enter Phone number">
+                                    <input type="number" class="form-control" id="phone_number" name="phone_number" placeholder="Enter Phone number">
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Gender</label>
@@ -78,6 +79,16 @@
                 </div>
                 <img class="img-fluid" src="{!! asset('grayscale/assets/img/logo2.png') !!}" alt="..." />
             </div>
+            <script>
+                function showpassword() {
+                  var x = document.getElementById("password");
+                  if (x.type === "password") {
+                    x.type = "text";
+                  } else {
+                    x.type = "password";
+                  }
+                }
+            </script>
         </section>
         <!-- Footer-->
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Computer Club</div></footer>
