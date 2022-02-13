@@ -60,9 +60,6 @@ class StudentController extends Controller
             'address' => $request->address,
             'age' => $request->age,
             'phone_number' => $request->phone_number,
-            'gender' => $request->gender,
-            'interest' => $request->interest,
-            'class' => $request->class,
         ]);
 
         return redirect()->route('student:index')->with([
