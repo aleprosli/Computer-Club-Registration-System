@@ -53,21 +53,8 @@
                                     <label for="name" class="form-label">Phone Number</label>
                                     <input type="number" class="form-control" id="phone_number" name="phone_number" placeholder="Enter Phone number" value="{{ $student->phone_number }}">
                                 </div>
-                                <div class="mb-3 text-white">
-                                    <label for="name" class="form-label">Gender</label>
-                                    <input type="text" class="form-control" id="gender" name="gender" placeholder="Enter Gender" value="{{ $student->gender }}">
-                                </div>
-                                <div class="mb-3 text-white">
-                                    <label for="name" class="form-label">Interest</label>
-                                    <input type="text" class="form-control" id="interest" name="interest" placeholder="Enter Interest" value="{{ $student->interest }}">
-                                </div>
-                                <div class="mb-3 text-white">
-                                    <label for="name" class="form-label">Class</label>
-                                    <input type="text" class="form-control" id="class" name="class" placeholder="Enter Class" value="{{ $student->class }}">
-                                </div>
                                 <a href="{{ url()->previous() }}" class="btn btn-warning">Back</a>
                                 <button onclick="return confirm('Are you sure to update this student?')" type="submit" class="btn btn-primary">Update</button>
-                                {{-- <a onclick="return confirm('Are you sure to update this student?')" href="{{ route('student:edit', $student) }}" class="btn btn-warning">Update</a> --}}
                             </form>
                         </p>
                     </div>
