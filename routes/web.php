@@ -27,6 +27,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::post('register/user', [App\Http\Controllers\StudentController::class, 'store'])->name('register:user');
 
 Route::get('student/index', [App\Http\Controllers\StudentController::class, 'index'])->name('student:index');
+Route::get('student/edit/{student}', [App\Http\Controllers\StudentController::class, 'edit'])->name('student:edit');
+Route::post('student/update/{student}', [App\Http\Controllers\StudentController::class, 'update'])->name('student:update');
 Route::get('student/index/approve/{student}', [App\Http\Controllers\StudentController::class, 'approve'])->name('student:approve');
 Route::get('student/index/reject/{student}', [App\Http\Controllers\StudentController::class, 'reject'])->name('student:reject');
 Route::get('student/index/show/{student}', [App\Http\Controllers\StudentController::class, 'show'])->name('student:show');
