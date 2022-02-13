@@ -32,7 +32,8 @@
                                 <td>{{ $student->gender }}</td>
                                 <td>{{ $student->interest }}</td>
                                 <td>{{ $student->class }}</td>
-                                <td><a onclick="return confirm('Are you sure to delete this student?')" href="{{ route('student:destroy', $student) }}" class="btn btn-danger">Delete</a></td>
+                                <td><a onclick="return confirm('Are you sure to edit this student?')" href="{{ route('student:edit', $student) }}" class="btn btn-warning">Update</a>
+                                    <a onclick="return confirm('Are you sure to delete this student?')" href="{{ route('student:destroy', $student) }}" class="btn btn-danger">Delete</a></td>
                             </tr>
                           </tbody>
                       </table>
