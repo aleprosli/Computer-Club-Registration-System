@@ -24,6 +24,17 @@ class StudentController extends Controller
 
     public function store(Request $request)
     {
+        //Validation
+        $request->validate([
+            'name' => 'required|max:50', //perlu isi, max 50char
+            'email' => 'required|unique:students,email', //perlu isi, unique->check table students->column email
+            'ic' => 'required|min:12|max:12', //perlu isi , min|max 12char
+            'username' => 'required|min:5|max:12', //perlu isi, min 5char max 5char
+            'password' => 'required|min:5|max:12', //perlu isi, min 5char max 5char
+            'address' => 'required', //perlu isi
+        ]);
+
+        //store guna mass asignment laravel
         Student::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -38,6 +49,7 @@ class StudentController extends Controller
             'class' => $request->class,
         ]);
 
+        //lepas store, return view
         return redirect()->route('/')->with([
             'alert-type' => 'alert-success',
             'alert-message' => 'Thank you for register, please wait for approval'
