@@ -21,46 +21,78 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-4 text-center">Club Info</h2>
+                        <h2 class="text-white mb-4 text-center">Club Member Register</h2>
                         <p class="text-white-50">
                             <form method="POST" action="{{ route('register:user') }}">
                             @csrf
+                                @if($errors->any())
+                                    {!! implode('', $errors->all('<div class="alert alert-danger">:message</div>')) !!}
+                                @endif
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Full name</label>
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Full Name" required>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Full Name" >
+                                    @if ($errors->has('name'))
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('name') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" required>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" >
+                                    @if ($errors->has('email'))
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Username</label>
-                                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" required>
+                                    <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" >
+                                    @if ($errors->has('username'))
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('username') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Identification Number</label>
-                                    <input type="number" class="form-control" id="ic" name="ic" placeholder="Enter Identification Number" required>
+                                    <input type="number" class="form-control" id="ic" name="ic" placeholder="Enter Identification Number" >
+                                    @if ($errors->has('ic'))
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('ic') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Password</label>
-                                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" >
+                                    @if ($errors->has('password'))
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                        </span>
+                                    @endif
                                     <input type="checkbox" onclick="showpassword()">Show Password
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Address</label>
-                                    <textarea class="form-control" id="address" name="address" placeholder="Enter Address" rows="3" required></textarea>
+                                    <textarea class="form-control" id="address" name="address" placeholder="Enter Address" rows="3" ></textarea>
+                                    @if ($errors->has('address'))
+                                        <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $errors->first('address') }}</strong>
+                                        </span>
+                                    @endif
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Age</label>
-                                    <input type="number" class="form-control" id="age" name="age" placeholder="Enter Age" required>
+                                    <input type="number" class="form-control" id="age" name="age" placeholder="Enter Age" >
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Phone Number</label>
-                                    <input type="number" class="form-control" id="phone_number" name="phone_number" placeholder="Enter Phone number" required>
+                                    <input type="number" class="form-control" id="phone_number" name="phone_number" placeholder="Enter Phone number" >
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Gender</label>
-                                    {{-- <input type="text" class="form-control" id="gender" name="gender" placeholder="Enter Gender" required> --}}
                                     <div class="form-check">
                                         <input type="radio" class="form-check-input" id="gender1" name="gender" value="Male" checked>Male
                                         <label class="form-check-label" for="radio1"></label>
@@ -72,9 +104,8 @@
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Interest</label>
-                                    {{-- <input type="text" class="form-control" id="interest" name="interest" placeholder="Enter Interest" required> --}}
                                     <div class="input-group">
-                                        <select class="form-control" id="interest" name="interest" placeholder="Enter Interest" required>
+                                        <select class="form-control" id="interest" name="interest" placeholder="Enter Interest" >
                                         <option selected>Choose Interest</option>
                                           <option value="Web Developing">Web Developing</option>
                                           <option value="Game Design">Game Design</option>
@@ -86,7 +117,7 @@
                                 <div class="mb-3 text-white">
                                     <label for="name" class="form-label">Class</label>
                                     <div class="input-group">
-                                        <select class="form-control" id="class" name="class" placeholder="Click here to choose class" required>
+                                        <select class="form-control" id="class" name="class" placeholder="Click here to choose class" >
                                             <option selected>Choose Class</option>
                                             <option value="One">One</option>
                                             <option value="Two">Two</option>
