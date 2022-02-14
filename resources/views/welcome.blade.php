@@ -56,7 +56,6 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">Computer Club System</h1>
-                        <a class="btn btn-primary" href="#about">Watch Video</a>
                         <a class="btn btn-primary" href="#about">Learn More</a>
                     </div>
                 </div>
