@@ -84,7 +84,7 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Club Activities</h4>
-                            <p class="text-black-50 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nesciunt consequuntur facilis architecto cumque voluptas non animi natus eius blanditiis voluptatibus quos, quam, sit consequatur sequi earum perspiciatis, fuga cupiditate.</p>
+                            <p class="text-black-50 mb-0">These clubs provide opportunities for youth to participate in activities, interact with peers in a supervised setting, and form relationships with adults. Some clubs focus on a specific area, thus allowing members to develop their skills and interests in that area. Other clubs provide an array of activities from which children and adolescents can choose.</p>
                         </div>
                     </div>
                 </div>
@@ -96,7 +96,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Web Developing</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <p class="mb-0 text-white-50">Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -111,7 +111,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Graphic Design</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <p class="mb-0 text-white-50">Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users’ specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
@@ -126,7 +126,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Game Developing</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
+                                    <p class="mb-0 text-white-50">Game Development is the art of creating games and describes the design, development and release of a game. It may involve concept generation, design, build, test and release. While you create a game, it is important to think about the game mechanics, rewards, player engagement and level design.</p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
@@ -141,7 +141,7 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Video Editing</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
+                                    <p class="mb-0 text-white-50">Video editing is the process of manipulating and rearranging video shots to create a new work. Editing is usually considered to be one part of the post production process — other post-production tasks include titling, colour correction, sound mixing, etc.</p>
                                     <hr class="d-none d-lg-block mb-0 me-0" />
                                 </div>
                             </div>
