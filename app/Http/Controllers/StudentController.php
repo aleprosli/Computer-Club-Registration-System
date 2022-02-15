@@ -27,7 +27,7 @@ class StudentController extends Controller
         //Validation
         $request->validate([
             'name' => 'required|max:50', //perlu isi, max 50char
-            'email' => 'required|unique:students,email', //perlu isi, unique->check table students->column email
+            'email' => 'required|unique:students,email|email', //perlu isi, unique->check table students->column email
             'ic' => 'required|min:12|max:12', //perlu isi , min|max 12char
             'username' => 'required|min:5|max:12', //perlu isi, min 5char max 5char
             'password' => 'required|min:5|max:12', //perlu isi, min 5char max 5char
