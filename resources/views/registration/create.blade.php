@@ -39,7 +39,7 @@
                                 </div>
                                 <div class="mb-3 text-white">
                                     <label for="email" class="form-label">Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Email" >
+                                    <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email" >
                                     @if ($errors->has('email'))
                                         <span class="invalid-feedback" role="alert">
                                         <strong>{{ $errors->first('email') }}</strong>
